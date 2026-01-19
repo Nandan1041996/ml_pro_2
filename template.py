@@ -3,7 +3,7 @@ from pathlib import Path
 import logging 
 
 logging.basicConfig(level=logging.INFO,
-                    format='[%(astime)s]: %(message)s:')
+                    format='[%(asctime)s]: %(message)s:')
 
 
 project_name = "cnnClassifier"
@@ -22,7 +22,8 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trials/ipynb"
+    "research/trials/ipynb",
+    "templates/index.html"
 ]
 # why .gitkeep if you commit just empty folder then it will not reflact on github, something should be in folder not empty.
 
