@@ -1,7 +1,7 @@
 import setuptools
 
 with open("README.md","r",encoding='utf-8') as f:
-    long_discription = f.read()
+    long_description = f.read()
 
 
 version = "0.0.0"
@@ -13,7 +13,7 @@ AUTHOR_EMAIL = 'mayurnandanwar@ghcl.co.in'
 
 setuptools.setup(name=SRC_REPO,
                  version=version,
-                 long_description=long_discription,
+                 long_description=long_description,
                  author=AUTHOR_USER_NAME,
                 author_email=AUTHOR_EMAIL,
                 description="A small python package for CNN app",

@@ -11,7 +11,7 @@ project_name = "cnnClassifier"
 list_of_files = [
     ".github/wokflows/.gitkeep",
     f"src/{project_name}/__init__.py",
-    f"src/{project_name}/components/__init__.py"
+    f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/config/configuration.py",
     f"src/{project_name}/pipeline/__init__.py",
@@ -22,13 +22,13 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trials/ipynb",
+    "research/trials.ipynb",
     "templates/index.html"
 ]
 # why .gitkeep if you commit just empty folder then it will not reflact on github, something should be in folder not empty.
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath = Path(filepath) # converts this into windows file path
     filedir,filename = os.path.split(filepath)
 
     if filedir != '':
