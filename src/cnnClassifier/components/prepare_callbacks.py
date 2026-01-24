@@ -4,7 +4,7 @@ import tensorflow as tf
 from src.cnnClassifier.config.configuration import PrepareCallbackConfig
 
 class PrepareCallbacks:
-    
+
     def __init__(self,config:PrepareCallbackConfig):
         self.config = config
 
@@ -14,7 +14,7 @@ class PrepareCallbacks:
         timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
         tb_running_log_dir = os.path.join(self.config.tensorboard_root_log_dir,f"tb_logs_at_{timestamp}")
 
-        return tf.keras.callbacks.TensorBoard(Log_dir=tb_running_log_dir)
+        return tf.keras.callbacks.TensorBoard(log_dir=tb_running_log_dir)
     
 
     @property
